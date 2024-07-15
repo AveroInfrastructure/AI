@@ -22,19 +22,59 @@
             /* Limit the width of the text */
             padding: 10px;
         }
+
+        .avero {
+            font-size: 200px;
+        }
+
+        .infra {
+            font-size: 75px;
+        }
+
+        #hero {
+            height: 800px;
+        }
+
+        @media (max-width: 768px) {
+            .avero {
+                font-size: 50px;
+            }
+
+            .infra {
+                font-size: 50px;
+            }
+
+            #hero {
+                height: 400px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="col-12 d-flex justify-content-center" style="background-image: url('assets/hero.jpg'); height: 800px; background-size:100vw;">
+    <div id="hero" class="col-12 d-flex justify-content-center"
+        style="background-image: url('assets/hero.jpg'); background-size:100vw;">
         <div class="mt-5">
-            <h1 class="mt-5 text-white" style="font-family: 'Anton SC', sans-serif; font-size: 200px;">AVERO</h1>
-            <h1 class="mb-5 text-white" style="font-family: 'Anton SC', sans-serif; font-size: 75px;">INFRASTRUCTURE</h1>
-            <button id="btnAbout" class="mt-5 col-6 offset-3 btn btn-primary" style="background-color: #0e3887;">About Us</button>
+            <h1 class="mt-5 text-white avero" style="font-family: 'Anton SC', sans-serif;">AVERO</h1>
+            <h1 class="mb-5 text-white infra" style="font-family: 'Anton SC', sans-serif;">INFRASTRUCTURE</h1>
+            <button id="btnAbout" class="mt-5 col-6 offset-3 btn btn-primary" style="background-color: #0e3887;">About
+                Us</button>
         </div>
     </div>
+    <div class="containter mt-5">
+        <h1>Lorem</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.</p>
+    </div>
     <script>
-        $('#btnAbout').on('click', function(){
+        $('#btnAbout').on('click', function () {
             $('#content').load('pages/about.html');
         })
     </script>
