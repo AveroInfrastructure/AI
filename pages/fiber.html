@@ -5,6 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Page Under Construction</title>
     <style>
+        .subPar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            /* Allow items to wrap */
+        }
+
+        .subPar-info {
+            max-width: 800px;
+            /* Limit the width of the text */
+            padding: 10px;
+        }
+
+        .avero {
+            font-size: 200px;
+        }
+
+        .infra {
+            font-size: 75px;
+        }
+
+        #hero {
+            height: 800px;
+        }
+
+        @media (max-width: 768px) {
+            .avero {
+                font-size: 50px;
+            }
+
+            .infra {
+                font-size: 50px;
+            }
+
+            #hero {
+                height: 400px;
+            }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            filter: invert(100%);
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
